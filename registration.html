@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Queue Management System</title>
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="icon" type="image/png"  href="utilities/Election-commission-L.png">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="image-container">
+                <img src="https://img.freepik.com/free-vector/sign-up-concept-illustration_114360-7885.jpg?t=st=1714491413~exp=1714495013~hmac=92c44f126fee4d5a4c7a15c4f4c6c015b998c9f22da97dec996f345c00f8ac04&w=740" alt="register image">
+            </div>
+            <div class="form-container">
+                <div class="header-container">
+                    <img class="eci-logo" src="https://presentations.gov.in/wp-content/uploads/2020/06/Election-Commission_Preview.png?x76386" alt="ECI logo">
+                    <h1>Queue Management System</h1>
+                </div>
+                <h2>Registration</h2>
+                <form id="registrationForm">
+                    <input type="text" id="fullName" placeholder="Full Name" required>
+                    <input type="email" id="email" placeholder="Email Address" required>
+                    <input type="password" id="password" placeholder="Password" required>
+                    <input type="number" id="voterId" placeholder="Voter ID" required>
+                    <input type="text" id="address" placeholder="Address" required>
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" required>
+                    <label for="gender">Gender:</label>
+                    <select id="gender" required>
+                        <option value="">Select...</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <button type="submit">Register</button>
+                    <p>Already have an account? <a href="login.html">login</a></p>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="js/registration.js"></script>
+</body>
+</html>
