@@ -4,22 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Queue Management System</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/login.css"> 
 </head>
 <body>
     <main>
-        <h1>Login</h1>
-        <div>
-            <div>
+        <div class="container">
+            <div class="form-container">
+                <div class="header-container">
+                    <img class="eci-logo" src="https://presentations.gov.in/wp-content/uploads/2020/06/Election-Commission_Preview.png?x76386" alt="ECI logo">
+                    <h1>Queue Management System</h1>
+                </div>
+                <h2>Login</h2>
+                <form id="loginForm">
+                    <label for="voterId">Voter ID:</label>
+                    <input type="number" id="voterId" name="voterId" placeholder="Enter your Voter ID" required>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                    <button type="submit">Login</button>
+                </form>
+                <p>Don't have an account? <a href="registration.html">Register here</a></p>
+                <p>Forgot your password? <a href="#">Click Here</a></p>
+            </div>
+            <div class="image-container">
                 <img src="https://img.freepik.com/free-vector/tablet-login-concept-illustration_114360-7883.jpg?t=st=1714491375~exp=1714494975~hmac=147f04468a295847f48bd01ddb80d99737d8c25deda904bab8dad48654ff2f06&w=740" alt="login image">
             </div>
-        <div>
-        <form id="loginForm">
-            <input type="text" id="loginVoterId" placeholder="Enter Voter ID" required>
-            <button type="submit">Login</button>
-            <p>Don't have an account <a href="registration.html">click here</a></p>
-        </form>
-        </div>
         </div>
     </main>
     <script src="js/login.js"></script>
