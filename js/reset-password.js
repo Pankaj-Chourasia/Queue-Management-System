@@ -1,3 +1,16 @@
+function togglePasswordVisibility(fieldId) {
+    let input = document.getElementById(fieldId);
+    let toggleIcon = input.nextElementSibling; 
+    if (input.type === "password") {
+        input.type = "text";
+        toggleIcon.textContent = 'visibility';  
+    } else {
+        input.type = "password";
+        toggleIcon.textContent = 'visibility_off';  
+    }
+}
+
+
 document.getElementById('confirmPassword').addEventListener('keyup', function() {
     let password = document.getElementById('password').value;
     let confirmPassword = document.getElementById('confirmPassword').value;
