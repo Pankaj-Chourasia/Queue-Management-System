@@ -54,7 +54,7 @@ form {
     width: 100%;
 }
 
-input[type="number"],
+input[type="text"],
 input[type="password"] {
     padding: 10px;
     margin-bottom: 10px;
@@ -127,4 +127,54 @@ h1 {
 
 p{
     font-family: "Merriweather", serif;
+}
+
+/* Media queries for smaller scrrens */
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; 
+        align-items: center; 
+        padding: 10px; 
+    }
+
+    .form-container, .image-container {
+        width: 100%; 
+        flex: unset; 
+        order: 2; 
+    }
+
+    .image-container {
+        order: 1; 
+        margin-top: 20px; 
+        height: auto;
+        width: 80%;
+        max-width: none;
+    }
+
+    .form-container {
+        padding: 20px;
+    }
+
+    input[type="number"],
+    input[type="password"],
+    button {
+        width: 100%; 
+    }
+
+    h1, h2 {
+        font-size: 1.5rem; 
+    }
+
+    .eci-logo {
+        max-width: 40px; 
+    }
+
+    label {
+        margin-bottom: 5px; 
+    }
+
+    button {
+        font-size: 1rem; 
+    }
 }
