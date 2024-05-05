@@ -6,6 +6,10 @@
     <title>Login - Queue Management System</title>
     <link rel="icon"  type="image/png" href="utilities/Election-commission-L.png">
     <link rel="stylesheet" href="css/login.css"> 
+    <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+  />
 </head>
 <body>
     <main>
@@ -18,9 +22,13 @@
                 <h2>Login</h2>
                 <form id="loginForm">
                     <label for="voterId">Voter ID:</label>
-                    <input type="text" id="voterId" name="voterId" placeholder="Enter your Voter ID" required>
+                    <input type="text" id="voterId" name="voterId" placeholder="Enter your Voter ID" required  />
+                    <div id="voterIdError"></div>
                     <label for="password">Password:</label>
-                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                    <div class="password-container">
+                        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                        <span class="material-symbols-outlined toggle-password" onclick="togglePasswordVisibility('password')">visibility_off</span>
+                    </div>
                     <button type="submit">Login</button>
                 </form>
                 <p>Don't have an account? <a href="registration.html">Register here</a></p>
